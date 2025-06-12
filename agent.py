@@ -6,8 +6,10 @@ from livekit.agents import JobContext, WorkerOptions, cli
 from livekit.agents.llm import ChatChunk
 from livekit.agents.voice import Agent, AgentSession
 from livekit.plugins import deepgram, openai, silero
+from livekit import api
 
 load_dotenv()
+
 
 class FunctionAgent(Agent):
     """A simple LiveKit voice assistant agent."""
